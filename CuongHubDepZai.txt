@@ -2006,7 +2006,7 @@
 		Title = "Cuong Hub",
 		SubTitle = "By macuongdz",
 		TabWidth = 155,
-		Theme = "Dark",
+		Theme = "Aqua",
 		Acrylic = false,
 		Size = UDim2.fromOffset(555, 320),
 		MinimizeKey = Enum.KeyCode.End
@@ -2119,7 +2119,7 @@
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local Players = game:GetService("Players")
 	if World3 then
-		Tabs.Main:AddSection("Cuong Hub")
+		Tabs.Main:AddSection("Main Framing")
 		local TeleportToggle = Tabs.Main:AddToggle("tpSubmarineWorker", {
 			Title = "Bay đến NPC Farm Level Trên 2600",
 			Description = "Teleport to Submarine Worker (Level >= 2600, World 3 only)",
@@ -7872,7 +7872,7 @@
 	end)
 	Toggle = Tabs.Drago:AddToggle("Toggle", {
 		Title = "Auto Relic Drago Trial ",
-		Description = "AUTO THỨC TỈNH TỘC RỒNG LỘN V4",
+		Description = "",
 		Default = false
 	})
 	Toggle:OnChanged(function(Value)
@@ -7922,8 +7922,8 @@
 		end
 	end)
 	Toggle = Tabs.Drago:AddToggle("Toggle", {
-		Title = "Auto Train Drago v4",
-		Description = "AUTO TRAIN VÀ MUA GEAR TỘC RỒNG LỘN",
+		Title = "Auto Trial Drago v4",
+		Description = "",
 		Default = false
 	})
 	Toggle:OnChanged(function(Value)
