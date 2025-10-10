@@ -2119,10 +2119,10 @@
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local Players = game:GetService("Players")
 	if World3 then
-		Tabs.Main:AddSection("Main Framing")
+		Tabs.Main:AddSection("Framing Other")
 		local TeleportToggle = Tabs.Main:AddToggle("tpSubmarineWorker", {
-			Title = "Bay đến NPC Farm Level Trên 2600",
-			Description = "Teleport to Submarine Worker (Level >= 2600, World 3 only)",
+			Title = "Teleport To Submarine Worker (Level >= 2600, Sea 3 only)",
+			Description = "",
 			Default = false,
 			Callback = function(value)
 				_G.tpSubmarineWorker = value
@@ -2165,7 +2165,7 @@
 	end
 	local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {
 		Title = "Auto Farm Level",
-		Description = "Cày Cấp",
+		Description = "",
 		Default = false
 	})
 	FarmLevel:OnChanged(function(Value)
@@ -2510,8 +2510,8 @@
 	_G.FarmTyrant = _G.FarmTyrant or false
 
 	local FarmTyrant = Tabs.Main:AddToggle("FarmTyrant", {
-		Title = "Farm Tyrant + Monster",
-		Description = "Farm Quái Và Đánh Boss",
+		Title = "Farm Tyrant of The Skies",
+		Description = "",
 		Default = false
 	})
 	FarmTyrant:OnChanged(function(Value)
@@ -2801,7 +2801,7 @@
 	Tabs.Main:AddSection("Miscellanea / Quest")
 	local ClosetMons = Tabs.Main:AddToggle("ClosetMons", {
 		Title = "Auto Farm Nearest",
-		Description = "Farm Xung Quanh",
+		Description = "",
 		Default = false
 	})
 	ClosetMons:OnChanged(function(Value)
@@ -2828,7 +2828,7 @@
 	if World2 then
 	local FactoryRaids = Tabs.Main:AddToggle("FactoryRaids", {
 		Title = "Auto Factory Raid",
-		Description = "Đánh Nhà Máy",
+		Description = "",
 		Default = false
 	})
 	FactoryRaids:OnChanged(function(Value)
@@ -2856,7 +2856,7 @@
 	if World3 then
 	local CastleRaids = Tabs.Main:AddToggle("CastleRaids", {
 		Title = "Auto Pirate Raid",
-		Description = "Auto Đánh Hải Tặc",
+		Description = "",
 		Default = false
 	})
 	CastleRaids:OnChanged(function(Value)
@@ -2929,7 +2929,7 @@
 	end)
 	Toggle = Tabs.Main:AddToggle("Toggle", {
 		Title = "Auto Materials",
-		Description = "Farm Nguyên Liệu",
+		Description = "",
 		Default = false
 	})
 	Toggle:OnChanged(function(Value)
@@ -2977,7 +2977,7 @@
 	if World2 then
 	local Q = Tabs.Main:AddToggle("Q", {
 		Title = "Auto Farm Ectoplasm",
-		Description = "Farm Vật Chất Kì Dị",
+		Description = "",
 		Default = false
 	})
 	Q:OnChanged(function(Value)
