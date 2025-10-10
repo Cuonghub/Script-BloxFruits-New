@@ -3523,7 +3523,7 @@
 		end
 	end)
 	local Q = Tabs.Main:AddToggle("Q", {
-		Title = "Auto Cake Prince",
+		Title = "Auto Fram Cake Prince",
 		Description = "",
 		Default = false
 	})
@@ -3612,7 +3612,7 @@
 		end
 	end)
 	local Q = Tabs.Main:AddToggle("Q", {
-		Title = "Auto Bones",
+		Title = "Auto Fram Bones",
 		Description = "",
 		Default = false
 	})
