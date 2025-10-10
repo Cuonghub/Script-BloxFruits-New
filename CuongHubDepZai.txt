@@ -2079,7 +2079,7 @@
 			Title = "Tab Settings"
 		}),
 		Melee = Window:AddTab({
-			Title = "Tab Get Melee V2"
+			Title = "Tab Fighting Melee Styles"
 		}),
 		Quests = Window:AddTab({
 			Title = "Tab Items Quest"
@@ -2213,7 +2213,7 @@
 	end)
 
 	local BossDropdown = Tabs.Main:AddDropdown("BossDropdown", {
-		Title = "Chose Boss",
+		Title = "Select Boss",
 		Description = "",
 		Values = Boss,
 		Default = 1,
@@ -2488,7 +2488,7 @@
 	end)
 	end
 	if World3 then
-	Tabs.Main:AddSection("Boss Tyrant of the Skies")
+	Tabs.Main:AddSection("Tyrant of the Skies")
 
 	local TyrantStatus = Tabs.Main:AddParagraph({
 		Title = "Tyrant of the Skies",
@@ -2919,7 +2919,7 @@
 	end)
 	end
 	Test = Tabs.Main:AddDropdown("Test", {
-		Title = "Choose Material",
+		Title = "Select Material",
 		Values = MaterialList,
 		Multi = false,
 		Default = nil
@@ -4531,7 +4531,7 @@
 		"Gun"
 	}
 	local Weapon_Config = Tabs.Settings:AddDropdown("Weapon_Config", {
-		Title = "Chọn Vũ Khí",
+		Title = "Select Weapon",
 		Values = _Weapon,
 		Multi = false,
 		Default = 1
@@ -6677,9 +6677,9 @@
 	spawn(function()
 		while wait(.2) do
 			if workspace.Map:FindFirstChild("MysticIsland") or workspace._WorldOrigin.Locations:FindFirstChild("Mirage Island") then
-				Ismirage:SetDesc(" Mirage Island : True")
+				Ismirage:SetDesc(" Mirage Island : ✅")
 			else
-				Ismirage:SetDesc(" Mirage Island : False")
+				Ismirage:SetDesc(" Mirage Island : ❌")
 			end
 		end
 	end)
@@ -7479,7 +7479,7 @@
 		end
 	end)
 	else
-		Tabs.Mirage:AddSection("CHỈ CÓ TẠI SEA 3")
+		Tabs.Mirage:AddSection("Only Sea 3")
 	end
 	if World3 then
 	Tabs.Drago:AddSection("Dojo Quest & Drago Race")
@@ -8084,9 +8084,9 @@
 	spawn(function()
 		while wait(.2) do
 			if workspace.Map:FindFirstChild("PrehistoricIsland") or workspace._WorldOrigin.Locations:FindFirstChild("Prehistoric Island") then
-				Check_Volcano:SetDesc(" Prehistoric Island : True")
+				Check_Volcano:SetDesc(" Prehistoric Island : ✅")
 			else
-				Check_Volcano:SetDesc(" Prehistoric Island : False")
+				Check_Volcano:SetDesc(" Prehistoric Island : ❌")
 			end
 		end
 	end)
@@ -8357,9 +8357,9 @@
 		pcall(function()
 			while wait(.2) do
 				if workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
-					FloD:SetDesc(' Flozen Dimension : True')
+					FloD:SetDesc(' Flozen Dimension : ✅')
 				else
-					FloD:SetDesc(' Flozen Dimension : False')
+					FloD:SetDesc(' Flozen Dimension : ❌')
 				end
 			end
 		end)
@@ -8849,9 +8849,9 @@
 	spawn(function()
 		while wait(.2) do
 			if workspace.Map:FindFirstChild("KitsuneIsland") or workspace._WorldOrigin.Locations:FindFirstChild("Kitsune Island") then
-				Check_Kitsu:SetDesc(" Kitsune Island : True")
+				Check_Kitsu:SetDesc(" Kitsune Island : ✅")
 			else
-				Check_Kitsu:SetDesc(" Kitsune Island : False")
+				Check_Kitsu:SetDesc(" Kitsune Island : ❌")
 			end
 		end
 	end)
@@ -8998,9 +8998,9 @@
 		while wait(.2) do
 			pcall(function()
 				if plr.PlayerGui.Main.Timer.Visible == true then
-					RaidS:SetDesc(" Raiding Statud : True")
+					RaidS:SetDesc(" Raiding Statud : ✅")
 				else
-					RaidS:SetDesc(" Raiding Statud : False")
+					RaidS:SetDesc(" Raiding Statud : ❌")
 				end
 			end)
 		end
